@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Хорун — программист</title>
+    <meta
+      name="description"
+      content="Хорун — программист. Сайты, код, цифровые решения. Связь и заявка онлайн."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Sora:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="fx-layer" aria-hidden="true">
+      <div class="stars"></div>
+      <div class="scanlines"></div>
+      <div class="vignette"></div>
+    </div>
+
+    <header class="topbar">
+      <a class="logo" href="#top">HORUN<span>.</span></a>
+      <nav class="nav">
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#request" class="nav-cta">Заявка</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-grid"></div>
+          <div class="hero-beam"></div>
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+          <div class="core"></div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse-dot"></span> online · developer</p>
+          <h1 class="brand">Хорун</h1>
+          <p class="lede">
+            Программист. Собираю сайты, сервисы и код, который выглядит и работает
+            как из будущего.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#request">Отправить заявку</a>
+            <a class="btn btn-ghost" href="#about">Кто я</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-head">
+          <p class="tag">01 — identity</p>
+          <h2>Обо мне</h2>
+        </div>
+        <div class="about-story">
+          <p class="lead-line">
+            Привет, я Хорун — программист.
+          </p>
+          <p>
+            Пишу код, собираю сайты и цифровые продукты с нуля: от идеи и дизайна
+            до рабочей версии, которую можно сразу показать людям. Мне важно,
+            чтобы интерфейс был красивым, а под капотом — чистая и быстрая логика.
+          </p>
+          <p>
+            Беру задачи целиком: лендинги, личные страницы, формы, интеграции,
+            Telegram-уведомления, небольшие веб-сервисы. Люблю эксперименты,
+            аккуратный UI и ощущение «вау» при первом открытии сайта.
+          </p>
+          <p>
+            Если нужна помощь с проектом — напиши. Разберём задачу, оценим объём
+            и сделаем так, чтобы результат выглядел современно и работал стабильно.
+          </p>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-head">
+          <p class="tag">02 — stack</p>
+          <h2>Что умею</h2>
+          <p>Инструменты и направления, с которыми работаю каждый день.</p>
+        </div>
+        <ul class="skill-rail">
+          <li>
+            <strong>Frontend</strong>
+            <span>HTML, CSS, JavaScript — живые интерфейсы и анимация</span>
+          </li>
+          <li>
+            <strong>Backend</strong>
+            <span>Node.js, API, формы, интеграции с ботами</span>
+          </li>
+          <li>
+            <strong>Сайты</strong>
+            <span>Лендинги, портфолио, страницы услуг под ключ</span>
+          </li>
+          <li>
+            <strong>Автоматизация</strong>
+            <span>Заявки, уведомления, простые цифровые сценарии</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section contacts" id="contacts">
+        <div class="section-head">
+          <p class="tag">03 — connect</p>
+          <h2>Контакты</h2>
+          <p>Свяжись напрямую или оставь заявку — ответ придёт быстро.</p>
+        </div>
+        <ul class="contact-list">
+          <li>
+            <span class="label">Почта</span>
+            <a href="mailto:dzamolovhorun@gmail.com">dzamolovhorun@gmail.com</a>
+          </li>
+          <li>
+            <span class="label">Телефон</span>
+            <a href="tel:+79019176030">+7 901 917 60 30</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section request" id="request">
+        <div class="section-head">
+          <p class="tag">04 — signal</p>
+          <h2>Отправить заявку</h2>
+          <p>Опиши задачу — уведомление мгновенно придёт мне в Telegram.</p>
+        </div>
+
+        <form class="request-form" id="request-form" novalidate>
+          <label>
+            <span>Имя</span>
+            <input
+              type="text"
+              name="name"
+              autocomplete="name"
+              placeholder="Как к тебе обращаться"
+              required
+              maxlength="80"
+            />
+          </label>
+          <label>
+            <span>Контакт</span>
+            <input
+              type="text"
+              name="contact"
+              autocomplete="tel"
+              placeholder="Телефон, Telegram или email"
+              required
+              maxlength="120"
+            />
+          </label>
+          <label class="full">
+            <span>Сообщение</span>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Что нужно сделать?"
+              required
+              maxlength="1000"
+            ></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit" id="submit-btn">
+              Отправить заявку
+            </button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Хорун · code from the future</p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
