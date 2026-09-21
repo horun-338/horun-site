@@ -20,3 +20,12 @@ npm start
 ## Важно
 
 Файл `.env` с секретами **не** загружается в GitHub.
+
+## Деплой на Render
+
+1. Открой: https://render.com/deploy?repo=https://github.com/horun-338/horun-site
+2. Войди через GitHub
+3. В Environment добавь:
+   - `TELEGRAM_BOT_TOKEN`
+   - `TELEGRAM_CHAT_ID`
+4. Нажми **Apply** / **Deploy**

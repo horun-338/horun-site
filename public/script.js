@@ -33,7 +33,7 @@ form?.addEventListener("submit", async (event) => {
   setStatus("Отправляю сигнал…");
 
   try {
-    const response = await fetch("/api/request", {
+   const response = await fetch("/.netlify/functions/send-application", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
