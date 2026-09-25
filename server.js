@@ -51,7 +51,7 @@ async function sendTelegramMessage(text) {
   return data;
 }
 
-app.post("/api/request", formLimiter, async (req, res) => {
+app.post(["/api/request", "/.netlify/functions/send-application"], formLimiter, async (req, res) => {
   try {
     const { name, contact, message } = req.body || {};
 
